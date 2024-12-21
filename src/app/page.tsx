@@ -1,3 +1,9 @@
+import { PresentationSection } from "@/components/home-presentation/PresentationSection";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <PresentationSection />
+    </div>
+  );
 }
