@@ -1,0 +1,3 @@
+.footer {
+  @apply flex absolute bottom-0 bg-black text-white w-full justify-center py-3;
+}
