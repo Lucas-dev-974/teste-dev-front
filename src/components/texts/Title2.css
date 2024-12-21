@@ -1,0 +1,3 @@
+.title-2 {
+  @apply text-5xl font-[700] leading-[72px] tracking-[-2.5%];
+}
