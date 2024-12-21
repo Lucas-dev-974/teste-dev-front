@@ -1,0 +1,7 @@
+.button {
+  @apply px-6 py-4 rounded-md text-primary  flex items-center gap-2 font-bold;
+}
+
+.button.active {
+  @apply bg-primary text-white;
+}
