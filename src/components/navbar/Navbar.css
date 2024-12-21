@@ -1,5 +1,5 @@
 .navbar {
-  @apply h-[80px] flex justify-between items-center mx-[10%] ;
+  @apply h-[80px] flex justify-between items-center;
 }
 
 .left-nav {
@@ -11,6 +11,6 @@
 }
 
 .download {
-  @apply hidden md:flex gap-2 items-center;
+  @apply hidden md:flex gap-3 items-center;
 }
 

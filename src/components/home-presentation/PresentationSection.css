@@ -1,0 +1,15 @@
+.presentation {
+  @apply flex flex-wrap xl:flex-nowrap relative xl:top-[152px] gap-8;
+}
+
+.left-part {
+  @apply flex flex-col gap-8 xl:w-2/3 pt-24 pr-12;
+}
+
+.right-part {
+  @apply flex justify-center;
+}
+
+.action {
+  @apply flex gap-4;
+}
