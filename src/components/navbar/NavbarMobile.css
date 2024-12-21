@@ -1,0 +1,23 @@
+.mobile-menu {
+  @apply md:hidden;
+}
+
+.mobile-menu-panel {
+  @apply absolute w-[100vw] h-[100vh] bg-[#F2F2F2]  top-0 left-0  duration-300;
+}
+
+.mobile-menu-panel.close {
+  @apply translate-x-[100%];
+}
+
+.mobile-menu-panel.open {
+  @apply translate-x-[0%];
+}
+
+.mobile-menu-header {
+  @apply flex justify-around items-center h-[80px];
+}
+
+.mobile-menu-content {
+  @apply flex flex-col gap-5 items-center justify-center h-3/4;
+}
