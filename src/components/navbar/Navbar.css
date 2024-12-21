@@ -1,0 +1,15 @@
+.navbar {
+  @apply h-[80px] flex justify-between items-center mx-[10%];
+}
+
+.left-nav {
+  @apply flex gap-[32px];
+}
+
+.nav-navigation {
+  @apply flex gap-[32px] items-center;
+}
+
+.download {
+  @apply flex gap-2 items-center;
+}
