@@ -1,3 +1,7 @@
 .text {
   @apply text-[#111827] text-sm;
 }
+
+.text.gray{
+  @apply text-[#D1D5DB]
+}

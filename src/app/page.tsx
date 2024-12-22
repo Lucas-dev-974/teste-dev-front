@@ -6,7 +6,7 @@ import { TestimonialsSection } from "@/components/home-testimonials/Testimonials
 
 export default function Home() {
   return (
-    <div className="home-content">
+    <div>
       <PresentationSection />
       <TestimonialsSection />
       <Partners />

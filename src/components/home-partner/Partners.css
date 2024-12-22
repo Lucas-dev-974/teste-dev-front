@@ -1,5 +1,5 @@
 .partners-section {
-  @apply py-[5%] px-[9%] min-h-[542px] relative top-80;
+  @apply py-[5%] px-[9%] min-h-[542px] ;
 }
 
 .grid-container {
