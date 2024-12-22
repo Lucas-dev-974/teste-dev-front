@@ -1,5 +1,5 @@
 .navbar {
-  @apply h-[80px] flex justify-between items-center px-[9%] absolute w-[100vw] bg-transparent top-0 left-0 z-10;
+  @apply h-[80px] flex justify-between items-center px-[9%] absolute w-[100vw] bg-transparent top-0 left-0 z-10 overflow-x-hidden ;
 }
 
 .left-nav {
