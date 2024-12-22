@@ -1,5 +1,6 @@
 "use client";
 
+import { Partners } from "@/components/home-partner/Partners";
 import { PresentationSection } from "@/components/home-presentation/PresentationSection";
 import { TestimonialsSection } from "@/components/home-testimonials/TestimonialsSection";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="home-content">
       <PresentationSection />
       <TestimonialsSection />
+      <Partners />
     </div>
   );
 }
