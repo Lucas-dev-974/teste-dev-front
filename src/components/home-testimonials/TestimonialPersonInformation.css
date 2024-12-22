@@ -1,0 +1,15 @@
+.testimonial-item {
+  @apply flex flex-col items-center;
+}
+
+.testimonial-item img {
+  @apply rounded-full w-14 h-14;
+}
+
+.testimonial-item .person-name {
+  @apply font-bold text-lg;
+}
+
+.testimonial-item .person-company {
+  @apply text-sm text-gray-600;
+}
