@@ -2,8 +2,7 @@ export function PhoneMockeup() {
   return (
     <svg
       width="392"
-      height="712"
-      viewBox="0 0 392 712"
+      viewBox="0 0 392 690"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

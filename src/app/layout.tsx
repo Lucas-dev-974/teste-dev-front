@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="px-[9%]">
+      <body>
         <Navbar />
         {children}
       </body>

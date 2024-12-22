@@ -1,5 +1,5 @@
 .presentation {
-  @apply flex flex-wrap xl:flex-nowrap relative xl:top-[152px] gap-8;
+  @apply flex flex-wrap xl:flex-nowrap relative xl:top-[85px] gap-8 mb-[70px] px-[9%];
 }
 
 .left-part {
