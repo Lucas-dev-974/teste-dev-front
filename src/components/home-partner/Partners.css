@@ -1,0 +1,11 @@
+.partners-section {
+  @apply py-[5%] px-[9%] min-h-[542px] relative top-80;
+}
+
+.grid-container {
+  @apply grid grid-cols-2 lg:grid-cols-5 gap-4 gap-y-28 justify-items-center;
+}
+
+.logo-item {
+  @apply flex justify-center items-center;
+}
