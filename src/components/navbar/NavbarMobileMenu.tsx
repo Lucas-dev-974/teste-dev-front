@@ -11,14 +11,17 @@ import { DownloadLinks } from "./DownloadLinks";
 
 export function NavbarMobileMenu() {
   const mobileContentRef = useRef<HTMLDivElement>(null);
+  const htmlElement = document.querySelector("html");
 
   function openMobileContentNav() {
     if (mobileContentRef.current?.classList.contains("close")) {
       mobileContentRef.current.classList.remove("close");
       mobileContentRef.current.classList.add("open");
+      htmlElement?.classList.add("overflow-hidden");
     } else if (mobileContentRef.current?.classList.contains("open")) {
       mobileContentRef.current.classList.remove("open");
       mobileContentRef.current.classList.add("close");
+      htmlElement?.classList.remove("overflow-hidden");
     }
   }
   return (
@@ -36,7 +39,7 @@ export function NavbarMobileMenu() {
           <DownloadLinks vertical />
         </div>
 
-        <Footer />
+        <Footer fixed />
       </div>
     </div>
   );
