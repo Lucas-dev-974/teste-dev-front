@@ -9,3 +9,12 @@
 .button.dark{
   @apply bg-black text-white;
 }
+
+.side-icon{
+  @apply w-5 flex items-center
+}
+
+.button.primary .side-icon > svg{
+  @apply fill-white;
+} 
+
