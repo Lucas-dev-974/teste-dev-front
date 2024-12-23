@@ -27,15 +27,3 @@ jobs:
       - name: Serve Storybook and run tests
         run: ./test
         working-directory: react-dev-app
-
-      - name: Archive test results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: react-dev-app/path/to/test-results
-
-      - name: Display test results
-
-        if: failure()
-        run: cat react-dev-app/path/to/test-results/*.xml
