@@ -3,7 +3,7 @@
 echo "****** Launch test *********"
 
 script_directory=$(dirname $(readlink -f $0))
-cd $script_directory
+cd $script_directory/..
 cd react-dev-app
 
 pid_storybook_server() {
