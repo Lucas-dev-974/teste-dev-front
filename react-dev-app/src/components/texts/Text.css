@@ -1,5 +1,5 @@
 .text {
-  @apply text-[#111827] text-sm;
+  @apply text-[#111827] text-sm font-[400];
 }
 
 .text.gray{

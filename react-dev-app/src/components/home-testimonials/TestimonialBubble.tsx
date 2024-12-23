@@ -22,7 +22,7 @@ export function TestimonialBubble(props: TestimonialBubbleProps) {
       } `}
     >
       <Title5 text={props.testimonial.title} />
-      <Text text={props.testimonial.body} />
+      <Text text={props.testimonial.body} center />
 
       <span className="relative top-[49%]">
         <TriangleIcon />
