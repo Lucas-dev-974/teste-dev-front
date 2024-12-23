@@ -1,9 +1,12 @@
 <details>
-  <summary><h1>Readme dev-fullstack-teste</h1></summary>
+  <summary><h1>Readme de: teste-fullstack-front</h1></summary>
   <div>
     <h3>Installation</h3>
     <p>Veuillez utiliser la commande <code>make setup</code> pour installer le projet.</p>
+    <h3>Lancer le projet</h3>
     <p>Vous pouvez utiliser la commande <code>make up</code> pour lancer le site.</p>
+    <h3>Avec docker</h3>
+    <p>Lancer la commande <code>docker-compose up --build</code>.</p>
   </div>
 </details>
 
