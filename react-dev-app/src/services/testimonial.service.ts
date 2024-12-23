@@ -33,8 +33,6 @@ export default class TestimonialService {
     //   },
     // ];
     const response = await FetcherService.get("/testimonials/top");
-    console.log("response", response);
-
     return response;
   }
 }
