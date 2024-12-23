@@ -27,3 +27,7 @@ Lancer la commande `npm run dev`
 ## Build le projet
 
 Lancer la commandee `npm run build`, le build se retrouve dans le dossier parent views
+
+## Storybook
+
+Lancer la commande `npm run storybook`, une page s'ouvrira automatiquement.
