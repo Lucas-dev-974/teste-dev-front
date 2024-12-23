@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Manage  modal popup when cursor is at the top right corner
   useEffect(() => {
     document.addEventListener("mousemove", function (event) {
       const screenWidth = window.innerWidth;

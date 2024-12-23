@@ -9,8 +9,6 @@ interface TestimonialListProps {
 }
 
 export function TestimonialList(props: TestimonialListProps) {
-  console.log("TestimonialList", props);
-
   return (
     <div className="testimonials-list">
       {props.testimonials.map((testimonial, index) => (

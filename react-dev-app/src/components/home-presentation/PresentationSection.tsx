@@ -3,10 +3,10 @@
 import { PhoneMockeup } from "@/assets/PhoneMockeup";
 import { Button } from "../buttons/Button";
 import { PlayerIcon } from "@/icons/PlayerIcon";
-
-import "./PresentationSection.css";
 import { Title } from "../texts/Title";
 import { Description } from "../texts/Description";
+
+import "./PresentationSection.css";
 
 export function PresentationSection() {
   return (
@@ -17,7 +17,7 @@ export function PresentationSection() {
           <Title text="The easiest way to manage projects" />
           <Description text="From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done." />
 
-          <div className="action flex gap-4">
+          <div className="action">
             <Button style="primary" text="Get Started" onClick={() => {}} />
             <Button
               text="Watch Video"
@@ -27,7 +27,7 @@ export function PresentationSection() {
           </div>
         </div>
 
-        <div className="right-part flex justify-center">
+        <div className="right-part">
           <PhoneMockeup />
         </div>
       </div>
