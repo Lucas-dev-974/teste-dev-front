@@ -1,3 +1,28 @@
 .button-icon {
-  @apply min-w-5;
+  @apply min-w-5 flex items-center cursor-pointer bg-transparent border-none;
+}
+
+.button-icon.primary {
+  @apply bg-primary p-3 rounded-full ;
+}
+
+.button-icon.primary > svg {
+  @apply  stroke-white;
+}
+
+.button-icon.bg-less > svg  {
+  @apply  stroke-dark;
+}
+
+
+.button-icon.xs > svg {
+  @apply w-4 h-4;
+}
+
+.button-icon.md > svg {
+  @apply w-6 h-6;
+}
+
+.button-icon.lg > svg {
+  @apply w-8 h-8;
 }
