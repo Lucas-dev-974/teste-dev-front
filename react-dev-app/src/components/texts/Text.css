@@ -1,7 +1,11 @@
 .text {
-  @apply text-[#111827] text-sm font-[400];
+  @apply text-[#111827] font-normal;
 }
 
-.text.gray{
-  @apply text-[#D1D5DB]
+.text.gray-light{
+  @apply text-[#D1D5DB] 
+}
+
+.text-gray-dark {
+  @apply text-[#374151];
 }

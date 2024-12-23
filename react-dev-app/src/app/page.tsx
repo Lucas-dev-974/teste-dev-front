@@ -19,7 +19,11 @@ export default function Home() {
       const zoneWidth = 100;
       const zoneHeight = 100;
 
-      if (cursorX > screenWidth - zoneWidth && cursorY < zoneHeight) {
+      if (
+        cursorX > screenWidth - zoneWidth &&
+        cursorY < zoneHeight &&
+        screenWidth > 640
+      ) {
         setIsOpen(true);
       }
     });

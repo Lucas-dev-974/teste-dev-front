@@ -1,5 +1,5 @@
 .presentation {
-  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[80px]  gap-8  mb-32 h-[90vh];
+  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[80px]  gap-8  mb-32 xl:h-[90vh];
 }
 
 .left-part {
@@ -11,5 +11,9 @@
 }
 
 .action {
-  @apply flex gap-4;
+  @apply flex flex-wrap w-full ;
+}
+
+.action > button  {
+  @apply sm:w-fit gap-4
 }

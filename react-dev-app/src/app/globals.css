@@ -18,5 +18,5 @@ body {
 }
 
 .center-content-app{
-  @apply px-[9%] 2xl:px-[11%]
+  @apply px-[9%] 2xl:px-[11%] 
 }

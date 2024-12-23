@@ -10,7 +10,7 @@
 }
 
 .testimonial-bubble {
-  @apply min-w-[383px] bg-white py-10 px-8 flex flex-col items-center gap-2 rounded-[10px] shadow-lg;
+  @apply md:min-w-[383px] bg-white py-10 px-8 flex flex-col items-center gap-2 rounded-[10px] shadow-lg;
 }
 
 .animate-fadeInUp {

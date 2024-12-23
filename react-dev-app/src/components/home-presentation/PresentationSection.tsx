@@ -4,9 +4,9 @@ import { PhoneMockeup } from "@/assets/PhoneMockeup";
 import { Button } from "../buttons/Button";
 import { PlayerIcon } from "@/icons/PlayerIcon";
 import { Title } from "../texts/Title";
-import { Description } from "../texts/Description";
 
 import "./PresentationSection.css";
+import { Text } from "../texts/Text";
 
 export function PresentationSection() {
   return (
@@ -15,7 +15,11 @@ export function PresentationSection() {
       <div className="presentation center-content-app">
         <div className="left-part">
           <Title text="The easiest way to manage projects" />
-          <Description text="From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done." />
+          <Text
+            color="gray-dark"
+            size="lg"
+            text="From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done."
+          />
 
           <div className="action">
             <Button style="primary" text="Get Started" onClick={() => {}} />

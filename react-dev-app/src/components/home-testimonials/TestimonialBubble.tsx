@@ -2,10 +2,10 @@ import { TestimonialEntity } from "@/entities/Testimonial.entity";
 import { Title5 } from "../texts/Title5";
 import { Text } from "../texts/Text";
 import { TriangleIcon } from "@/icons/TriangleIcon";
-
-import "./TestimonialBubble.css";
 import { useIntersectionObserver } from "@/utils/useIntersectionObserver";
 import { RefObject } from "react";
+
+import "./TestimonialBubble.css";
 
 interface TestimonialBubbleProps {
   testimonial: TestimonialEntity;
