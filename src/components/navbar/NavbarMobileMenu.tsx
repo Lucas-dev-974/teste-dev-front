@@ -1,6 +1,6 @@
 import { CloseIcon } from "@/icons/CloseIcon";
 import { MenuIcon } from "@/icons/MenuIcon";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 import "./NavbarMobile.css";
 import { MenuLinks } from "./MenuLinks";
@@ -11,17 +11,21 @@ import { DownloadLinks } from "./DownloadLinks";
 
 export function NavbarMobileMenu() {
   const mobileContentRef = useRef<HTMLDivElement>(null);
-  const htmlElement = document.querySelector("html");
+  const htmlElement = useRef<HTMLHtmlElement | null>(null);
+
+  useEffect(() => {
+    htmlElement.current = document.querySelector("html");
+  });
 
   function openMobileContentNav() {
     if (mobileContentRef.current?.classList.contains("close")) {
       mobileContentRef.current.classList.remove("close");
       mobileContentRef.current.classList.add("open");
-      htmlElement?.classList.add("overflow-hidden");
+      htmlElement.current?.classList.add("overflow-hidden");
     } else if (mobileContentRef.current?.classList.contains("open")) {
       mobileContentRef.current.classList.remove("open");
       mobileContentRef.current.classList.add("close");
-      htmlElement?.classList.remove("overflow-hidden");
+      htmlElement.current?.classList.remove("overflow-hidden");
     }
   }
   return (
