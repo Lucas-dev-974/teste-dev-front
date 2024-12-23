@@ -1,5 +1,5 @@
 export default class FetcherService {
-  static host = "http://localhost:8000";
+  static host = "http://localhost:8000/api";
   static token = "";
 
   static async get(url: string) {
