@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Title2 } from "../texts/Title2";
-
-import "./TestimonialsSection.css";
 import { TestimonialEntity } from "@/entities/Testimonial.entity";
 import TestimonialService from "@/services/testimonial.service";
 import { TestimonialList } from "./TestimonialList";
+
+import "./TestimonialsSection.css";
 
 export function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState<TestimonialEntity[]>([]);
@@ -20,7 +20,7 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="testimonials ">
+    <section className="testimonials center-content-app">
       <Title2 text="Our clients speak" />
       <TestimonialList testimonials={testimonials} />
     </section>

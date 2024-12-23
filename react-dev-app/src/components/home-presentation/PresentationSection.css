@@ -1,13 +1,13 @@
 .presentation {
-  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[152px] gap-8  px-[9%] mb-32;
+  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[80px]  gap-8  mb-32 h-[90vh];
 }
 
 .left-part {
-  @apply flex flex-col gap-8 xl:w-2/3 pt-24 pr-12;
+  @apply flex flex-col gap-8 xl:w-2/3 pt-24 2xl:pt-40 pr-0 lg:pr-36 2xl:pr-0;
 }
 
 .right-part {
-  @apply flex justify-center;
+  @apply flex justify-center relative -left-10 xl:left-10   xl:w-fit w-full;
 }
 
 .action {

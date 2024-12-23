@@ -12,7 +12,7 @@ export function PresentationSection() {
   return (
     <>
       <div className="home-content"></div>
-      <div className="presentation">
+      <div className="presentation center-content-app">
         <div className="left-part">
           <Title text="The easiest way to manage projects" />
           <Description text="From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done." />

@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-
-import "./Navbar.css";
 import { NavbarMobileMenu } from "./NavbarMobileMenu";
 import { DownloadLinks } from "./DownloadLinks";
 import { LeftNavigation } from "./LeftNav";
 
+import "./Navbar.css";
+
 export function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar center-content-app">
       <LeftNavigation />
       <DownloadLinks />
       <NavbarMobileMenu />
