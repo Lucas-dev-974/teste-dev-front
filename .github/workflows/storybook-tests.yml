@@ -20,7 +20,7 @@ jobs:
         run: cd react-dev-app && npm install -f
 
       - name: Build Storybook
-        run: npm run build-storybook --quiet
+        run: cd react-dev-app && npm run build-storybook --quiet
 
       - name: Serve Storybook and run tests
-        run: ./test
+        run: cd react-dev-app && ./test
