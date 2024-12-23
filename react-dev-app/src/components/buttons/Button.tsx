@@ -36,5 +36,5 @@ export function Button(props: ButtonProps) {
 }
 
 function IconContainer(props: { icon: React.ReactNode }) {
-  return <span className="w-5">{props.icon}</span>;
+  return <span className="side-icon">{props.icon}</span>;
 }
