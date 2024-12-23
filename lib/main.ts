@@ -5,6 +5,7 @@ import { getThreeTopTestimonials, testimonials } from "./testimonials.ts";
 async function handler(req: { url: string | URL }) {
   const url = new URL(req.url);
 
+  // Allowing static files to be served
   if (url.pathname.startsWith("/_next/static/")) {
     try {
       const filePath = join(Deno.cwd(), "views", url.pathname);
