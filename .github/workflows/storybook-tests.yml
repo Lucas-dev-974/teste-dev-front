@@ -36,5 +36,6 @@ jobs:
           path: react-dev-app/path/to/test-results
 
       - name: Display test results
+
         if: failure()
         run: cat react-dev-app/path/to/test-results/*.xml
