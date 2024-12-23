@@ -1,4 +1,33 @@
-name: "Storybook Tests"
+# name: "Storybook Tests"
+
+# on:
+#   workflow_dispatch:
+#   pull_request:
+#     branches:
+#       - "**"
+
+# jobs:
+#   test:
+#     timeout-minutes: 60
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: "18.x"
+
+#       - name: Install dependencies
+#         run: npm install -f
+#         working-directory: react-dev-app
+
+#       - name: Build Storybook
+#         run: npm run build-storybook --quiet
+#         working-directory: react-dev-app
+
+#       - name: Serve Storybook and run tests
+#         run: ./test
+
+name: Storybook Tests
 
 on:
   workflow_dispatch:
@@ -12,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: "18.x"
@@ -26,3 +56,15 @@ jobs:
 
       - name: Serve Storybook and run tests
         run: ./test
+        working-directory: react-dev-app
+
+      - name: Archive test results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: react-dev-app/path/to/test-results
+
+      - name: Display test results
+        if: failure()
+        run: cat react-dev-app/path/to/test-results/*.xml
