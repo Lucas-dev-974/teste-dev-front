@@ -1,0 +1,47 @@
+.modal-container {
+  @apply fixed inset-0 flex items-center justify-center z-50;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black opacity-50;
+}
+
+.modal-content {
+  @apply bg-[#FFE500] rounded-lg shadow-lg p-6 z-10 min-w-[654px];
+}
+
+.modal-header {
+  @apply flex gap-4 pt-8 items-center;
+}
+
+.modal-icon {
+  @apply w-12 h-12 bg-black rounded-full flex items-center justify-center relative;
+}
+
+.modal-icon-text {
+  @apply relative top-1 text-3xl;
+}
+
+.modal-body {
+  @apply flex mt-7;
+}
+
+.modal-text {
+  @apply flex flex-col gap-4;
+}
+
+.modal-text-line {
+  @apply text-5xl font-semibold;
+}
+
+.modal-percentage {
+  @apply flex flex-col justify-center ml-4;
+}
+
+.modal-percentage-text {
+  @apply text-yellow-300 text-2xl rounded-full bg-black py-2 px-3 relative -left-10;
+}
+
+.modal-footer {
+  @apply flex mt-48;
+}

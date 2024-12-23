@@ -18,7 +18,7 @@ export function PresentationSection() {
           <Description text="From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done." />
 
           <div className="action flex gap-4">
-            <Button active text="Get Started" onClick={() => {}} />
+            <Button style="primary" text="Get Started" onClick={() => {}} />
             <Button
               text="Watch Video"
               onClick={() => {}}

@@ -9,15 +9,19 @@ interface ButtonProps {
     icon: React.ReactNode;
     side: "left" | "right";
   };
+  style?: "primary" | "dark";
+  fullWidth?: boolean;
   active?: boolean;
 }
 
 export function Button(props: ButtonProps) {
+  let classname = "button ";
+  classname += props.style === "primary" ? "primary" : "";
+  classname += props.style === "dark" ? "dark" : "";
+  classname += props.fullWidth ? " w-full" : "";
+
   return (
-    <button
-      onClick={props.onClick}
-      className={"button " + (props.active ? " active" : "")}
-    >
+    <button onClick={props.onClick} className={classname}>
       {props.sideIcon?.side === "left" && (
         <IconContainer icon={props.sideIcon.icon} />
       )}
