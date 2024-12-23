@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-react-dev-app/node_modules
+/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -14,11 +14,11 @@ react-dev-app/node_modules
 /coverage
 
 # next.js
-react-dev-app/.next/
-react-dev-app/out/
+/.next/
+/out/
 
 # production
-react-dev-app/build
+/build
 
 # misc
 .DS_Store
