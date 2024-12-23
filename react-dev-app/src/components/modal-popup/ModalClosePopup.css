@@ -1,3 +1,14 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .modal-container {
   @apply fixed inset-0 flex items-center justify-center z-50;
 }
@@ -7,7 +18,8 @@
 }
 
 .modal-content {
-  @apply bg-[#FFE500] rounded-lg shadow-lg p-6 z-10 min-w-[654px];
+  @apply bg-yellow rounded-lg shadow-lg p-6 z-10 min-w-[654px];
+  animation: slideUp 0.7s ease-out;
 }
 
 .modal-header {
@@ -35,11 +47,11 @@
 }
 
 .modal-percentage {
-  @apply flex flex-col justify-center ml-4;
+  @apply flex flex-col justify-center ml-4 font-bold;
 }
 
 .modal-percentage-text {
-  @apply text-yellow-300 text-2xl rounded-full bg-black py-2 px-3 relative -left-10;
+  @apply text-yellow text-2xl rounded-full bg-black py-2 px-3 relative -left-10;
 }
 
 .modal-footer {
