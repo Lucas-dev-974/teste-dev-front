@@ -15,11 +15,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16.x"
+
       - name: Install dependencies
-        run: npm install -f
-      - name: Install Playwright
-        run: npx playwright install --with-deps
+        run: cd react-dev-app && npm install -f
+
       - name: Build Storybook
         run: npm run build-storybook --quiet
+
       - name: Serve Storybook and run tests
         run: ./test
