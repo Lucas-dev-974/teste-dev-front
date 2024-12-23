@@ -24,6 +24,10 @@ jobs:
         run: npm run build-storybook --quiet
         working-directory: react-dev-app
 
+      - name: Give execute permissions to test script
+        run: chmod +x ./test
+        working-directory: react-dev-app
+
       - name: Serve Storybook and run tests
         run: ./test
         working-directory: react-dev-app
