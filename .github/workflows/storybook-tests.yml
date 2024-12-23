@@ -17,10 +17,12 @@ jobs:
           node-version: "18.x"
 
       - name: Install dependencies
-        run: cd react-dev-app && npm install -f
+        run: npm install -f
+        working-directory: react-dev-app
 
       - name: Build Storybook
-        run: cd react-dev-app && npm run build-storybook --quiet
+        run: npm run build-storybook --quiet
+        working-directory: react-dev-app
 
       - name: Serve Storybook and run tests
-        run: cd react-dev-app && ./test
+        run: ./test
