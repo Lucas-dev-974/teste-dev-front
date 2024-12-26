@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import { expect, fn } from "@storybook/test";
 
 import { Button } from "./Button";
 import { PlayerIcon } from "../../icons/PlayerIcon";
+import { within } from "@storybook/testing-library";
 
 const meta = {
   title: "Button/SideIconButton",
@@ -19,6 +20,13 @@ export const Primary: Story = {
   args: {
     style: "primary",
     text: "Button",
+  },
+
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const button = await canvas.getByRole("button", { name: /Button/i });
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveClass("primary");
   },
 };
 
@@ -50,3 +58,5 @@ export const RightSideIcon: Story = {
     },
   },
 };
+
+// -- Test cases
