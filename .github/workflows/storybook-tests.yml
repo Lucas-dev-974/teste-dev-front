@@ -20,6 +20,9 @@ jobs:
         run: npm install -f
         working-directory: react-dev-app
 
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+
       - name: Build Storybook
         run: npm run build-storybook --quiet
         working-directory: react-dev-app
