@@ -14,7 +14,7 @@ body {
 
 .home-content {
   background-image: url("/background.png");
-  @apply bg-cover bg-no-repeat bg-bottom h-screen w-screen absolute top-0 left-0 -z-10;
+  @apply bg-cover bg-bottom bg-no-repeat  h-[108vh] w-screen absolute top-0 left-0 -z-10;
 }
 
 .center-content-app {
