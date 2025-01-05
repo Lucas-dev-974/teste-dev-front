@@ -1,3 +1,3 @@
 .testimonials-list {
-  @apply flex gap-5 justify-around flex-wrap;
+  @apply flex gap-3 justify-around flex-wrap;
 }

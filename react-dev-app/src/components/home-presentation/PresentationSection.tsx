@@ -11,7 +11,6 @@ import { Text } from "../texts/Text";
 export function PresentationSection() {
   return (
     <>
-      <div className="home-content"></div>
       <div className="presentation center-content-app">
         <div className="left-part">
           <Title text="The easiest way to manage projects" />
