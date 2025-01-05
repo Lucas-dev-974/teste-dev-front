@@ -13,10 +13,10 @@ body {
 }
 
 .home-content {
-  background-image: url("https://cdn.discordapp.com/attachments/800673507557376021/1320098635094167703/image.png?ex=67685d28&is=67670ba8&hm=647ebe82067a02311e9c18d7e45135824c21589add6462be9695d38513aefbb8&");
- @apply bg-cover bg-no-repeat bg-bottom h-screen w-screen absolute top-0 left-0 -z-10;
+  background-image: url("/background.webp");
+  @apply bg-cover bg-no-repeat bg-bottom h-screen w-screen absolute top-0 left-0 -z-10;
 }
 
-.center-content-app{
-  @apply px-[9%] 2xl:px-[11%] 
+.center-content-app {
+  @apply px-[9%] 2xl:px-[11%];
 }

@@ -25,6 +25,21 @@ async function handler(req: { url: string | URL }) {
     }
   }
 
+  if (url.pathname.endsWith(".webp")) {
+    try {
+      const filePath = join(Deno.cwd(), "views", url.pathname);
+      const file = await Deno.readFile(filePath);
+      const contentType = "image/webp";
+      return new Response(file, {
+        headers: { "Content-Type": contentType },
+        status: 200,
+      });
+    } catch (error) {
+      console.error("Erreur de lecture du fichier statique :", error);
+      return new Response("Fichier non trouvé", { status: 404 });
+    }
+  }
+
   if (url.pathname === "/") {
     try {
       const body = await renderFile("views/index.html");
