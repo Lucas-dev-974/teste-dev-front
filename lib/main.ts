@@ -25,7 +25,7 @@ async function handler(req: { url: string | URL }) {
     }
   }
 
-  if (url.pathname.endsWith(".webp")) {
+  if (url.pathname.endsWith(".png")) {
     try {
       const filePath = join(Deno.cwd(), "views", url.pathname);
       const file = await Deno.readFile(filePath);
