@@ -1,9 +1,9 @@
 .partners-section {
-  @apply py-[5%] px-[9%] min-h-[542px] ;
+  @apply py-[5%] px-[9%] min-h-[542px];
 }
 
 .grid-container {
-  @apply grid grid-cols-2 lg:grid-cols-5 gap-4 gap-y-28 justify-items-center;
+  @apply grid sm:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-28 justify-items-center;
 }
 
 .logo-item {

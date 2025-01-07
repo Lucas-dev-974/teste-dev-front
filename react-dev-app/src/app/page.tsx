@@ -22,7 +22,7 @@ export default function Home() {
       if (
         cursorX > screenWidth - zoneWidth &&
         cursorY < zoneHeight &&
-        screenWidth > 640
+        screenWidth > 1016
       ) {
         setIsOpen(true);
       }

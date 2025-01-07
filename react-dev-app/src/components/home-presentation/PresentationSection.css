@@ -1,14 +1,14 @@
 .presentation {
-  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[120px]  gap-8 min-h-screen bg-bottom bg-no-repeat bg-cover;
+  @apply flex flex-wrap xl:flex-nowrap  xl:pt-[120px]  gap-8   min-h-screen bg-bottom  bg-no-repeat bg-cover;
   background-image: url("/background.png");
 }
 
 .left-part {
-  @apply flex flex-col gap-8 xl:w-1/2 pt-24 pr-0 xl:pr-36 2xl:pr-0;
+  @apply flex flex-col gap-8 xl:w-1/2 pt-24;
 }
 
 .right-part {
-  @apply flex justify-center relative xl:left-20 xl:w-1/2 w-fit;
+  @apply flex justify-center md:left-[15%] relative xl:left-20 xl:w-1/2 w-full sm:w-fit;
 }
 
 .action {
